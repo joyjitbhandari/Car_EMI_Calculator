@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Car EMI Calculator</string>
+    <string name="emi_result">Monthly EMI:-</string>
+    <string name="calculate_monthly_emi">Calculate EMI</string>
+    <string name="write_here">Write here values</string>
+    <string name="loan_term_in_months">Loan Term(months):</string>
+    <string name="interest_rate">Interest Rate:</string>
+    <string name="down_payment">Down Payment:</string>
+    <string name="principal_amount">Principal Amount:</string>
+    <string name="clear">CLEAR</string>
+    <string name="exit">EXIT</string>
+    <string name="total_amount_with_interest">Return Amount With Interest:-</string>
+</resources>

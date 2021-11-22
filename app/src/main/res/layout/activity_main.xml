@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+    <TableLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TableRow
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/txPrincipalAmount"
+                android:layout_width="192dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/principal_amount"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/etPrincipleAmount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/write_here"
+                android:inputType="numberDecimal"
+                android:maxLength="14"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/txDownPayment"
+                android:layout_width="172dp"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/down_payment"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/etDownPayment"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/write_here"
+                android:inputType="numberDecimal"
+                android:maxLength="14"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="@string/interest_rate"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/etInterestRate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/write_here"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray" />
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:paddingBottom="10dp"
+                android:text="@string/loan_term_in_months"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/etLoanTerm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/write_here"
+                android:inputType="number"
+                android:maxLength="5"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/gray" />
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"
+        android:text="@string/calculate_monthly_emi"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/button"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="10dp"
+        android:text="@string/emi_result"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/txTotalResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txResult"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:padding="10dp"
+        android:text="@string/total_amount_with_interest"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txTotalResult"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:gravity="center">
+
+            <Button
+                android:id="@+id/btClear"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:text="@string/clear"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginEnd="30dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btExit"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:layout_toEndOf="@+id/btClear"
+                android:text="@string/exit"
+                android:textAlignment="center"
+                android:layout_marginStart="30dp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>
