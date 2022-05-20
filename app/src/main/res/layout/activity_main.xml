@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
-    android:background="@color/white">
+    android:background="@drawable/background">
     <TableLayout
         android:id="@+id/layout1"
         android:layout_width="match_parent"
@@ -22,7 +22,7 @@
                 android:layout_height="wrap_content"
                 android:padding="10dp"
                 android:text="@string/principal_amount"
-                android:textColor="@color/black"
+                android:textColor="#F4C44C"
                 android:textSize="18sp"
                 android:textStyle="bold"/>
 
@@ -34,8 +34,8 @@
                 android:inputType="numberDecimal"
                 android:maxLength="14"
                 android:padding="10dp"
-                android:textColor="@color/black"
-                android:textColorHint="@color/gray" />
+                android:textColor="#FBCA8D"
+                android:textColorHint="#FFFFFF" />
         </TableRow>
 
         <TableRow
@@ -48,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:padding="10dp"
                 android:text="@string/down_payment"
-                android:textColor="@color/black"
+                android:textColor="#F4C44C"
                 android:textSize="18sp"
                 android:textStyle="bold"/>
 
@@ -60,8 +60,8 @@
                 android:inputType="numberDecimal"
                 android:maxLength="14"
                 android:padding="10dp"
-                android:textColor="@color/black"
-                android:textColorHint="@color/gray" />
+                android:textColor="#FBCA8D"
+                android:textColorHint="#FFFFFF"  />
         </TableRow>
 
         <TableRow
@@ -73,7 +73,7 @@
                 android:layout_height="wrap_content"
                 android:padding="10dp"
                 android:text="@string/interest_rate"
-                android:textColor="@color/black"
+                android:textColor="#F4C44C"
                 android:textSize="18sp"
                 android:textStyle="bold"/>
 
@@ -85,8 +85,8 @@
                 android:inputType="numberDecimal"
                 android:maxLength="5"
                 android:padding="10dp"
-                android:textColor="@color/black"
-                android:textColorHint="@color/gray" />
+                android:textColor="#FBCA8D"
+                android:textColorHint="#FFFFFF"  />
         </TableRow>
 
         <TableRow
@@ -99,7 +99,7 @@
                 android:padding="10dp"
                 android:paddingBottom="10dp"
                 android:text="@string/loan_term_in_months"
-                android:textColor="@color/black"
+                android:textColor="#F4C44C"
                 android:textSize="18sp"
                 android:textStyle="bold"/>
 
@@ -111,8 +111,8 @@
                 android:inputType="number"
                 android:maxLength="5"
                 android:padding="10dp"
-                android:textColor="@color/black"
-                android:textColorHint="@color/gray" />
+                android:textColor="#FBCA8D"
+                android:textColorHint="#FFFFFF"  />
         </TableRow>
 
     </TableLayout>
@@ -128,7 +128,8 @@
         android:layout_marginBottom="10dp"
         android:padding="10dp"
         android:text="@string/calculate_monthly_emi"
-        android:textColor="@color/black"
+        android:background="@drawable/edit_text_border"
+        android:textColor="@color/white"
         android:textSize="18sp"
         android:textStyle="bold" />
 
@@ -143,7 +144,7 @@
         android:padding="10dp"
         android:text="@string/emi_result"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="#F4C44C"
         android:textSize="16sp"
         android:textStyle="bold"/>
     <TextView
@@ -157,7 +158,7 @@
         android:padding="10dp"
         android:text="@string/total_amount_with_interest"
         android:textAlignment="center"
-        android:textColor="@color/black"
+        android:textColor="#F4C44C"
         android:textSize="16sp"
         android:textStyle="bold"/>
 
@@ -176,7 +177,8 @@
                 android:layout_height="50dp"
                 android:text="@string/clear"
                 android:textAlignment="center"
-                android:textColor="@color/black"
+                android:background="@drawable/edit_text_border"
+                android:textColor="@color/white"
                 android:textSize="18sp"
                 android:layout_marginEnd="30dp"
                 android:textStyle="bold" />
@@ -188,8 +190,9 @@
                 android:layout_toEndOf="@+id/btClear"
                 android:text="@string/exit"
                 android:textAlignment="center"
+                android:background="@drawable/edit_text_border"
                 android:layout_marginStart="30dp"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:textSize="18sp"
                 android:textStyle="bold" />
     </RelativeLayout>

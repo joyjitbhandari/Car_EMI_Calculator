@@ -11,12 +11,12 @@ class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(activity_splash)
-
+        supportActionBar?.hide()
         handler = Handler()
         Handler().postDelayed({
             startActivity(Intent(this, MainActivity::class.java))
             finish()
-        },3000L)
+        },300L)
     }
 }
 
